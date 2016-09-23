@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/xilingProjects/Lab2_RCA8/RCA8testFixure_isim_beh.exe" -prj "C:/xilingProjects/Lab2_RCA8/RCA8testFixure_beh.prj" "RCA8testFixure" "work.glbl" 

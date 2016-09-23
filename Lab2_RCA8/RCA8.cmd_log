@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/xilingProjects/Lab2_RCA8/RCA8.xst" -ofn "C:/xilingProjects/Lab2_RCA8/RCA8.syr" 

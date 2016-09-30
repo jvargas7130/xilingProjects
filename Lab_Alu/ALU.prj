@@ -1,0 +1,4 @@
+verilog work "Subtracter_32.v"
+verilog work "OR_32.v"
+verilog work "AND_32.v"
+verilog work "ALU.v"

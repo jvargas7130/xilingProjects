@@ -26,4 +26,4 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Stopped at time : 60 ns :  in File "C:/xilingProjects/Lab_Alu/ALU_TestFixure.v" Line 71 
+Stopped at time : 60 ns :  in File "C:/xilingProjects/Lab_Alu/ALU_TestFixure.v" Line 72 

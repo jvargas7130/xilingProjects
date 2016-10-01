@@ -12,8 +12,8 @@ module ALU( ALUControl, A, B, Result, Zero_Flag);
 					 .argB(   B   ),
 				    .AandB(   ANDout   ) );
 					 
-	OR_32 _or( .argA( A       ),
-						.argB(B      ),
+	OR_32 _or( .argA(     A       ),
+						.argB( B      ),
 						.AorB( ORout ));
 						
 	Adder_32 _add( .augend(  A     ),
@@ -36,7 +36,7 @@ module ALU( ALUControl, A, B, Result, Zero_Flag);
 							 .In4(    32'bx        ),
 							 .In5(    32'bx        ),
 							 .In6(   DIFFout       ),
-							 .In7(     (A < B) ?  32'b1 : 32'b0     ),
+							 .In7(     LTout     ),
 							 .Out(     Result  ) );
 							 
 			assign Zero_Flag =	( Result ) ? 1'b0 : 1'b1;				 

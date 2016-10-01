@@ -1,6 +1,7 @@
 `timescale 1ns / 1ps
 
 
+
 module ALU_TestFixure;
 
 	// Inputs
@@ -23,7 +24,7 @@ module ALU_TestFixure;
 
 	initial begin
 //TestCase0 - check the and operation
-		ALUControl = 0;
+		ALUControl = 000;
 		A = 32'h014071757;
 		B = 32'h014071757 + 1;
 
@@ -31,7 +32,7 @@ module ALU_TestFixure;
 		#10;
 		
 			//TestCase1 - check the and operation
-		ALUControl = 1;
+		ALUControl = 001;
 		A = 32'h014071757;
 		B = 32'h014071757 + 1;
 
@@ -39,7 +40,7 @@ module ALU_TestFixure;
 		#10;
 		
 			//TestCase2 - check the and operation
-		ALUControl = 2;
+		ALUControl = 010;
 		A = 32'h014071757;
 		B = 32'h014071757 + 1;
 
@@ -47,14 +48,14 @@ module ALU_TestFixure;
 		#10;
 		
 			//TestCase3 - check the and operation
-		ALUControl = 3;
+		ALUControl = 110;
 		A = 32'h014071757;
 		B = 32'h014071757 + 1;
 
 		// Wait 10 ns for global reset to finish
 		#10;
 			//TestCase4 - check the and operation
-		ALUControl = 4;
+		ALUControl = 111;
 		A = 32'h014071757;
 		B = 32'h014071757 + 1;
 
@@ -62,7 +63,7 @@ module ALU_TestFixure;
 		#10;
 		
 		//TestCase5 - check the and operation
-		ALUControl = 5;
+		ALUControl = 111;
 		A = 32'h014071757 + 1;
 		B = 32'h014071757;
 
@@ -70,6 +71,7 @@ module ALU_TestFixure;
 		#10;
         $stop;
 		// Add stimulus here
+
 
 
 	end
